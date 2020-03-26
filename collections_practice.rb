@@ -32,7 +32,11 @@ end
 end
 
 def find_a(array)
-  array.start_with? 
+  array.select do |element|
+  element.start_with?("a")
+end
+end
+
 
 
 
