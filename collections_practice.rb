@@ -22,12 +22,7 @@ end
 
   
 def reverse_array(array)
-  array = []
-  
-  array.reverse
-  
-  return array
-  
+ array.reverse
 end
 
 
