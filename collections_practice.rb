@@ -3,8 +3,8 @@ def sort_array_asc(array)
 end
 
 def sort_array_desc(array)
-  sorted_array = array.sort 
-  sorted.reverse 
+  sorted = array.sort 
+  sorted.reverse
 end
 
 def sort_array_char_count(array)
@@ -14,44 +14,45 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
- array[1], array[2] = array[2], array[1]
- array 
+  
+  array[1], array[2] = array[2], array[1]
+  
+  return array
 end
 
+  
 def reverse_array(array)
-  array.reverse
+ array.reverse
 end
 
 def kesha_maker(array)
- array.each do |element|
-   element[2] = "$"
+  array.each do |element|
+    element[2] = "$"
 end
 end
 
 def find_a(array)
-  array.select do |i|
-    i.start_with?("a")
-  end
+  array.select do |element|
+  element.start_with?("a")
 end
+end
+
 
 def sum_array(array)
   array.sum
 end
-return sum
-end
 
 def add_s(array)
-  array.each do |element|
+  array.each do |word|
     
-    if array.index(element) == 1 
-      element = element
+    if array.index(word) == 1 
+      word = word
     else
-      element << "s"
+      word << "s"
+      
     end
-  end
+    end
 end
-
-  
 
 
 
